@@ -6,39 +6,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes, target-densitydpi=medium-dpi" />
         <title>Blog</title>
         <link rel="stylesheet" href="index.css" />
-        <script src='index.js'></script>
     </head>
-
 
     <body>
         <header>
-            <div class='MainHeader'>       
-                <input class='NavBar_Left' type="checkbox" id="menuicon">  
-                <label for="menuicon">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </label>
-          
-                <div class="sidebarContainer">
-                    <div class='sidebar'>
-                    <h1><a href="https://google.com">Notice</a></h1>
-                    <h2><a href="https://google.com">Why h2~h5 is not herited from '.sidebar>h1, h2, h3, h4, h5'!!!</a></h2>
-                    <h3><a href="https://google.com">Notice-Sub-Sub</a></h3>
-                    <h1><a href="https://google.com">To do</a></h1>
-                    <h2><a href="https://google.com">To do-Sub1</a></h2>
-                    <h2><a href="https://google.com">To do-Sub2</a></h2>
-                    <a href="https://google.com">
-                        <div>Google</div></a>
-                    <a href="https://google.com">
-                        <div>Google</div></a>
-                    <a href="https://google.com">
-                        <div>Google</div></a>
+            <div class='MainHeader'> 
+                <div class='MainHeader_1' id='MainHeader_1'>      
+                    <input class='NavBar_Left' type="checkbox" id="menuicon">  
+                    <label for="menuicon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </label>
+            
+                    <div class="sidebarContainer" id="sidebarContainer">
+                        <div class='sidebar'>
+                        <h1><a href="https://google.com">Notice</a></h1>
+                        <h2><a href="https://google.com">Why h2~h5 is not herited from '.sidebar>h1, h2, h3, h4, h5'!!!</a></h2>
+                        <h3><a href="https://google.com">Notice-Sub-Sub</a></h3>
+                        <h1><a href="https://google.com">To do</a></h1>
+                        <h2><a href="https://google.com">To do-Sub1</a></h2>
+                        <h2><a href="https://google.com">To do-Sub2</a></h2>
+                        <a href="https://google.com">
+                            <div>Google</div></a>
+                        <a href="https://google.com">
+                            <div>Google</div></a>
+                        <a href="https://google.com">
+                            <div>Google</div></a>
+                        </div>
                     </div>
+
+                    <a class='NavBar_Center' id='NavBar_Center' href='https://jangsuson111.github.io/JangSu-Blog/'>JangSu's Blog</a>
+                    <a class='NavBar_Right' href='https://jangsuson111.github.io/JangSu-Blog/'>Home</a>
                 </div>
 
-                <a class='NavBar_Center' href='https://google.com'>Test Link</a>
-                <a class='NavBar_Right' href='https://jangsuson111.github.io/JangSu-Blog/'>Home</a>
+                <div class='MainHeader_2'>
+                    <a id='MainTitle' href='https://jangsuson111.github.io/JangSu-Blog/'>JangSu's Blog</a>
+                </div>
+
+                <div class='MainHeader_3'>
+                    <p id='SubTitle'>Private Blog</p>
+                </div>
+
+                <div class='MainHeader_4'>
+                    <ul class='NavBar_Sub'>
+                        <li><a href='https://google.com'>Test1</a></li>
+                        <li><a href='https://google.com'>Test2</a></li>
+                    </ul>
+                </div>
+                </div>
             </div>                         
         </header>
         
@@ -47,6 +63,8 @@
                 <h1>JangSu Son</h1>
                 <ul>
                     <li>E-mail: jangsuson111@naver.com</li>
+                    <li><a href='https://github.com/jangsuson111/JangSu-Blog'>
+                        GitHub: https://github.com/jangsuson111/JangSu-Blog</a></li>
                 </ul>
                 <h2>Purpose of this blog</h2>
                 <ul>
@@ -56,11 +74,41 @@
                     <li>To post my public projects.</li>
                 </ul>
 
-                <h1>To do</h1>
+                <h1>To-dos</h1>
+                <em>To-dos about web programming</em>
                 <ul>
-                    <li>Making table of contents</li>
-                    <li>Applying Media Query</li>
-                    <li>Applying JavaScript</li>
+                    <li>Making table of contents
+                        <ul>
+                            <li>Projects</li>
+                            <li>Blog Daily History(using github)</li>
+                            <li>Summary(for what I've learned</li>
+                            <li>Goals</li>
+                        </ul>
+                    </li>
+                    <li>Applying Media Query(with manual control)</li>
+                    <li style='text-decoration: line-through'>Applying JavaScript</li>
+                    <li>Add dark mode</li>
+                    <li>Communication</li>
+                    <li>Blog Update
+                        <ul>
+                            <li>except disappearance of 'NavBar_Center' from mobile media query</li>
+                            <li>Learn how to make table of contents</li>
+                            <li>Apply transition for 'NavBar_Center'</li>
+                            <li>Decoration(Using Pics)</li>
+                            <li>Learn the reason when using the following code:<br>
+                                a {<br>
+                                text-decoration: none;<br>
+                                color: white;<br>
+                                }<br>
+                                .MainArticle>a{<br>
+                                color: #858585;<br>
+                                }<br>
+                                '.MainArticle>a' is overlapped by a?
+                            </li>
+                            <li>Using 'bootstrap' and 'foundation'</li>
+                            <li>Add code-style box</li>
+                        </ul>
+                    </li>
                 </ul>
                 <h1>This is test.</h1>
                 <h2>This is test.</h2>
@@ -74,6 +122,12 @@
                 <h1>This is test.</h1>
                 <h1>This is test.</h1>
             </div>
+
+            <footer class='MainArticle_footer'>
+                <button type='button' class='scroll_Top' onclick='goTop()'>Top</button>
+            </footer>
         </div>
+
+        <script src='index.js'></script>
     </body>
 </html>

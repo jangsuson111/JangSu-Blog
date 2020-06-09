@@ -1,2 +1,2 @@
-# JangSu-Blog
-My private blog
+# Jangsu-Blog
+ Private Blog
